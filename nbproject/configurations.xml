@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><configurationDescriptor version="65">
+  <logicalFolder displayName="root" name="root" projectFiles="true">
+    <logicalFolder displayName="Header Files" name="HeaderFiles" projectFiles="true">
+      <logicalFolder displayName="MCC Generated Files" name="MCC Generated Files" projectFiles="true">
+        <logicalFolder displayName="diag_common" name="diag_common" projectFiles="true">
+          <logicalFolder displayName="config" name="config" projectFiles="true">
+            <itemPath>mcc_generated_files/diag_common/config/diag_config.h</itemPath>
+          </logicalFolder>
+          <logicalFolder displayName="examples" name="examples" projectFiles="true">
+            <itemPath>mcc_generated_files/diag_common/examples/diag_common_example.h</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder displayName="diag_library" name="diag_library" projectFiles="true">
+          <logicalFolder displayName="memory" name="memory" projectFiles="true">
+            <logicalFolder displayName="volatile" name="volatile" projectFiles="true">
+              <itemPath>mcc_generated_files/diag_library/memory/volatile/diag_sram_types.h</itemPath>
+              <itemPath>mcc_generated_files/diag_library/memory/volatile/diag_sram_marchb.h</itemPath>
+              <itemPath>mcc_generated_files/diag_library/memory/volatile/diag_sram_checkerboard.h</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder displayName="include" name="include" projectFiles="true">
+          <logicalFolder displayName="utils" name="utils" projectFiles="true">
+            <logicalFolder displayName="assembler" name="assembler" projectFiles="true">
+              <itemPath>mcc_generated_files/include/utils/assembler/gas.h</itemPath>
+              <itemPath>mcc_generated_files/include/utils/assembler/iar.h</itemPath>
+            </logicalFolder>
+            <itemPath>mcc_generated_files/include/utils/compiler.h</itemPath>
+            <itemPath>mcc_generated_files/include/utils/atomic.h</itemPath>
+            <itemPath>mcc_generated_files/include/utils/utils.h</itemPath>
+            <itemPath>mcc_generated_files/include/utils/interrupt_avr8.h</itemPath>
+            <itemPath>mcc_generated_files/include/utils/utils_assert.h</itemPath>
+            <itemPath>mcc_generated_files/include/utils/assembler.h</itemPath>
+          </logicalFolder>
+          <itemPath>mcc_generated_files/include/clock.h</itemPath>
+          <itemPath>mcc_generated_files/include/port.h</itemPath>
+          <itemPath>mcc_generated_files/include/ccp.h</itemPath>
+          <itemPath>mcc_generated_files/include/mcc.h</itemPath>
+          <itemPath>mcc_generated_files/include/protected_io.h</itemPath>
+          <itemPath>mcc_generated_files/include/cpuint.h</itemPath>
+          <itemPath>mcc_generated_files/include/nvmctrl.h</itemPath>
+          <itemPath>mcc_generated_files/include/pin_manager.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder displayName="Linker Files" name="LinkerScript" projectFiles="true">
+    </logicalFolder>
+    <logicalFolder displayName="Source Files" name="SourceFiles" projectFiles="true">
+      <logicalFolder displayName="MCC Generated Files" name="MCC Generated Files" projectFiles="true">
+        <logicalFolder displayName="diag_common" name="diag_common" projectFiles="true">
+          <logicalFolder displayName="diag_startup" name="diag_startup" projectFiles="true">
+            <itemPath>mcc_generated_files/diag_common/diag_startup/diag_startup.c</itemPath>
+          </logicalFolder>
+          <logicalFolder displayName="examples" name="examples" projectFiles="true">
+            <itemPath>mcc_generated_files/diag_common/examples/diag_common_example.c</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder displayName="diag_library" name="diag_library" projectFiles="true">
+          <logicalFolder displayName="memory" name="memory" projectFiles="true">
+            <logicalFolder displayName="volatile" name="volatile" projectFiles="true">
+              <itemPath>mcc_generated_files/diag_library/memory/volatile/diag_sram_marchb.c</itemPath>
+              <itemPath>mcc_generated_files/diag_library/memory/volatile/diag_sram_checkerboard.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder displayName="documentation" name="documentation" projectFiles="true">
+          <itemPath>mcc_generated_files/documentation/iec60730-avr8-sram-march.chm</itemPath>
+          <itemPath>mcc_generated_files/documentation/iec60730-avr8-sram-checkerboard.chm</itemPath>
+        </logicalFolder>
+        <logicalFolder displayName="src" name="src" projectFiles="true">
+          <itemPath>mcc_generated_files/src/nvmctrl.c</itemPath>
+          <itemPath>mcc_generated_files/src/mcc.c</itemPath>
+          <itemPath>mcc_generated_files/src/device_config.c</itemPath>
+          <itemPath>mcc_generated_files/src/protected_io.S</itemPath>
+          <itemPath>mcc_generated_files/src/pin_manager.c</itemPath>
+          <itemPath>mcc_generated_files/src/cpuint.c</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <itemPath>main.c</itemPath>
+    </logicalFolder>
+    <logicalFolder displayName="Important Files" name="ExternalFiles" projectFiles="false">
+      <itemPath>Makefile</itemPath>
+      <itemPath>MyConfig.mc3</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="default" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>AVR128DA64</targetDevice>
+        <targetHeader/>
+        <targetPluginBoard/>
+        <platformTool>noID</platformTool>
+        <languageToolchain>XC8</languageToolchain>
+        <languageToolchainVersion>2.20</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <packs>
+        <pack name="AVR-Dx_DFP" vendor="Microchip" version="1.5.82"/>
+      </packs>
+      <ScriptingSettings>
+      </ScriptingSettings>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+        <archiverTool>
+        </archiverTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
+          <alternateLoadableFile/>
+        </loading>
+        <subordinates>
+        </subordinates>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeCustomizationPreStep/>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep/>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <HI-TECH-COMP>
+        <property key="additional-warnings" value="true"/>
+        <property key="asmlist" value="true"/>
+        <property key="call-prologues" value="false"/>
+        <property key="default-bitfield-type" value="true"/>
+        <property key="default-char-type" value="true"/>
+        <property key="define-macros" value=""/>
+        <property key="disable-optimizations" value="false"/>
+        <property key="extra-include-directories" value="mcc_generated_files"/>
+        <property key="favor-optimization-for" value="-speed,+space"/>
+        <property key="garbage-collect-data" value="true"/>
+        <property key="garbage-collect-functions" value="true"/>
+        <property key="identifier-length" value="255"/>
+        <property key="local-generation" value="false"/>
+        <property key="operation-mode" value="free"/>
+        <property key="opt-xc8-compiler-strict_ansi" value="false"/>
+        <property key="optimization-assembler" value="true"/>
+        <property key="optimization-assembler-files" value="false"/>
+        <property key="optimization-debug" value="false"/>
+        <property key="optimization-invariant-enable" value="false"/>
+        <property key="optimization-invariant-value" value="16"/>
+        <property key="optimization-level" value="-O1"/>
+        <property key="optimization-speed" value="false"/>
+        <property key="optimization-stable-enable" value="false"/>
+        <property key="pack-struct" value="true"/>
+        <property key="preprocess-assembler" value="true"/>
+        <property key="short-enums" value="true"/>
+        <property key="undefine-macros" value=""/>
+        <property key="use-cci" value="true"/>
+        <property key="use-iar" value="false"/>
+        <property key="verbose" value="false"/>
+        <property key="warning-level" value="-3"/>
+        <property key="what-to-do" value="ignore"/>
+      </HI-TECH-COMP>
+      <HI-TECH-LINK>
+        <property key="additional-options-checksum" value=""/>
+        <property key="additional-options-code-offset" value=""/>
+        <property key="additional-options-command-line" value="-Wl,--section-start,.data=0x804020"/>
+        <property key="additional-options-errata" value=""/>
+        <property key="additional-options-extend-address" value="false"/>
+        <property key="additional-options-trace-type" value=""/>
+        <property key="additional-options-use-response-files" value="false"/>
+        <property key="backup-reset-condition-flags" value="false"/>
+        <property key="calibrate-oscillator" value="false"/>
+        <property key="calibrate-oscillator-value" value="0x3400"/>
+        <property key="clear-bss" value="true"/>
+        <property key="code-model-external" value="wordwrite"/>
+        <property key="code-model-rom" value=""/>
+        <property key="create-html-files" value="false"/>
+        <property key="data-model-ram" value=""/>
+        <property key="data-model-size-of-double" value="24"/>
+        <property key="data-model-size-of-double-gcc" value="no-short-double"/>
+        <property key="data-model-size-of-float" value="24"/>
+        <property key="data-model-size-of-float-gcc" value="no-short-float"/>
+        <property key="display-class-usage" value="false"/>
+        <property key="display-hex-usage" value="false"/>
+        <property key="display-overall-usage" value="true"/>
+        <property key="display-psect-usage" value="false"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="fill-flash-options-addr" value=""/>
+        <property key="fill-flash-options-const" value=""/>
+        <property key="fill-flash-options-how" value="0"/>
+        <property key="fill-flash-options-inc-const" value="1"/>
+        <property key="fill-flash-options-increment" value=""/>
+        <property key="fill-flash-options-seq" value=""/>
+        <property key="fill-flash-options-what" value="0"/>
+        <property key="format-hex-file-for-download" value="false"/>
+        <property key="initialize-data" value="true"/>
+        <property key="input-libraries" value="libm"/>
+        <property key="keep-generated-startup.as" value="false"/>
+        <property key="link-in-c-library" value="true"/>
+        <property key="link-in-c-library-gcc" value=""/>
+        <property key="link-in-peripheral-library" value="false"/>
+        <property key="managed-stack" value="false"/>
+        <property key="opt-xc8-linker-file" value="false"/>
+        <property key="opt-xc8-linker-link_startup" value="false"/>
+        <property key="opt-xc8-linker-serial" value=""/>
+        <property key="program-the-device-with-default-config-words" value="true"/>
+        <property key="remove-unused-sections" value="true"/>
+      </HI-TECH-LINK>
+      <XC8-CO>
+        <property key="coverage-enable" value=""/>
+      </XC8-CO>
+      <XC8-config-global>
+        <property key="advanced-elf" value="true"/>
+        <property key="gcc-opt-driver-new" value="true"/>
+        <property key="gcc-opt-std" value="-std=c99"/>
+        <property key="gcc-output-file-format" value="dwarf-3"/>
+        <property key="omit-pack-options" value="false"/>
+        <property key="omit-pack-options-new" value="1"/>
+        <property key="output-file-format" value="-mcof,+elf"/>
+        <property key="stack-size-high" value="auto"/>
+        <property key="stack-size-low" value="auto"/>
+        <property key="stack-size-main" value="auto"/>
+        <property key="stack-type" value="compiled"/>
+        <property key="user-pack-device-support" value=""/>
+      </XC8-config-global>
+    </conf>
+  </confs>
+</configurationDescriptor>
